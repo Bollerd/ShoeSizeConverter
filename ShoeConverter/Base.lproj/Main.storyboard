@@ -42,8 +42,34 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Converted Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3K-BC-0cT">
+                                <rect key="frame" x="16" y="254" width="323" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Frauen Schuhgröße Umrechner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXo-t5-ZTp">
+                                <rect key="frame" x="16" y="159" width="323" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Hier die US Schuhgräße eingeben" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37f-kw-f19">
+                                <rect key="frame" x="16" y="216" width="323" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8Y-Lz-LzD">
+                                <rect key="frame" x="226" y="181" width="120" height="30"/>
+                                <state key="normal" title="Umrechnen">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertWomansShoeSizeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5h-Wf-xet"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nur ganze Zahlen verwenden" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSL-yE-Q1U">
-                                <rect key="frame" x="16" y="147" width="323" height="21"/>
+                                <rect key="frame" x="16" y="289" width="323" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,6 +80,8 @@
                     <connections>
                         <outlet property="mensConvertedShoeSizeLabel" destination="A54-oL-vY8" id="zFK-7N-yzm"/>
                         <outlet property="mensShoeSizeTextField" destination="5JX-vZ-ugi" id="8FZ-DA-3X3"/>
+                        <outlet property="womansConvertedShoeSizeLabel" destination="K3K-BC-0cT" id="qw8-xf-ky4"/>
+                        <outlet property="womensShoeSizeTextField" destination="37f-kw-f19" id="kor-0a-Zvv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
